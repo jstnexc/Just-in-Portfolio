@@ -135,7 +135,7 @@ export const ShadowArmyCanvas: React.FC = () => {
         preload="auto"
         className="absolute inset-0 h-full w-full object-cover object-center opacity-80 md:opacity-85 brightness-110 contrast-125 transition-opacity duration-700"
       >
-        <source src="/shadow-army.mp4" type="video/mp4" />
+        <source src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/shadow-army.mp4`} type="video/mp4" />
       </video>
 
       {/* 
